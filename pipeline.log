@@ -1,0 +1,884 @@
+2026-05-30 11:28:29,616 - INFO - TEST ENTRY
+2026-05-30 11:33:00,714 - INFO - Streaming started
+2026-05-30 11:33:00,742 - INFO - Processed Transaction: T00001
+2026-05-30 11:33:02,749 - INFO - Processed Transaction: T00112
+2026-05-30 11:33:04,751 - INFO - Processed Transaction: T00166
+2026-05-30 11:33:06,752 - INFO - Processed Transaction: T00272
+2026-05-30 11:33:08,755 - INFO - Processed Transaction: T00363
+2026-05-30 11:33:10,757 - INFO - Processed Transaction: T00442
+2026-05-30 11:33:12,765 - INFO - Processed Transaction: T00490
+2026-05-30 11:33:14,143 - INFO - Streaming stopped by user
+2026-05-30 11:38:10,663 - INFO - ETL process started
+2026-05-30 11:38:10,706 - INFO - Dataset loaded successfully. Records: 1000
+2026-05-30 11:38:10,713 - INFO - Duplicates removed: 0
+2026-05-30 11:38:10,719 - INFO - Missing value handling started
+2026-05-30 11:38:10,723 - INFO - Missing values handled successfully
+2026-05-30 11:38:10,725 - INFO - Negative values corrected
+2026-05-30 11:38:10,727 - INFO - Validation completed. Invalid records removed: 0
+2026-05-30 11:38:10,731 - INFO - Data Quality Score: 100.00%
+2026-05-30 11:38:10,748 - INFO - clean_transactions.csv created successfully
+2026-05-30 11:38:10,773 - INFO - ETL process completed successfully
+2026-05-30 11:42:45,198 - INFO - Anomaly Detection Process Started
+2026-05-30 11:42:45,213 - INFO - Dataset Loaded Successfully. Records: 1000
+2026-05-30 11:42:45,217 - INFO - Features Selected: Quantity, TotalValue, Price
+2026-05-30 11:42:45,217 - INFO - Isolation Forest Model Created
+2026-05-30 11:42:45,499 - INFO - Anomaly Prediction Completed
+2026-05-30 11:42:45,505 - INFO - Normal Records: 980
+2026-05-30 11:42:45,505 - INFO - Anomalies Detected: 20
+2026-05-30 11:42:45,517 - INFO - anomaly_results.csv created successfully
+2026-05-30 11:42:45,554 - INFO - Displayed First 20 Anomalies
+2026-05-30 11:42:45,554 - INFO - Anomaly Detection Process Completed Successfully
+2026-05-30 11:45:40,006 - INFO - Self-Healing Process Started
+2026-05-30 11:45:40,011 - INFO - Anomaly Results Loaded Successfully. Records: 1000
+2026-05-30 11:45:40,024 - INFO - Normal Records: 980
+2026-05-30 11:45:40,024 - INFO - Anomalies Found: 20
+2026-05-30 11:45:40,031 - INFO - Median Quantity Used: 3.0
+2026-05-30 11:45:40,031 - INFO - Median Price Used: 299.93
+2026-05-30 11:45:40,031 - INFO - Anomaly Records Healed Successfully
+2026-05-30 11:45:40,035 - INFO - Final Records After Healing: 1000
+2026-05-30 11:45:40,062 - INFO - healed_transactions.csv created successfully
+2026-05-30 11:45:40,062 - INFO - Total Healed Records: 20
+2026-05-30 11:45:40,062 - INFO - Self-Healing Process Completed Successfully
+2026-05-30 11:48:31,869 - INFO - Database Loading Process Started
+2026-05-30 11:48:31,883 - INFO - Healed Dataset Loaded Successfully. Records: 1000
+2026-05-30 11:48:31,883 - INFO - Connected to SQLite Database
+2026-05-30 11:48:31,932 - INFO - Transactions Table Created Successfully
+2026-05-30 11:48:31,934 - INFO - Records Stored in Database: 1000
+2026-05-30 11:48:31,934 - INFO - Database Connection Closed
+2026-05-30 11:48:31,934 - INFO - Database Loading Process Completed Successfully
+2026-05-30 11:56:05,177 - INFO - Failure Prediction Started
+2026-05-30 11:56:05,201 - INFO - Anomaly Rate: 2.00%
+2026-05-30 11:56:05,202 - INFO - Failure Risk Predicted: MEDIUM
+2026-05-30 11:56:05,212 - INFO - failure_prediction.csv created
+2026-05-30 11:56:05,214 - INFO - Failure Prediction Completed
+2026-05-31 20:15:17,333 - INFO - ETL process started
+2026-05-31 20:15:17,333 - INFO - ETL process failed: [Errno 2] No such file or directory: '../dataset/transactions.csv'
+2026-05-31 20:15:43,533 - INFO - Anomaly Detection Process Started
+2026-05-31 20:15:43,537 - INFO - Anomaly Detection Failed: [Errno 2] No such file or directory: '../dataset/clean_transactions.csv'
+2026-05-31 20:15:45,885 - INFO - Self-Healing Process Started
+2026-05-31 20:15:45,889 - INFO - Self-Healing Failed: [Errno 2] No such file or directory: '../dataset/anomaly_results.csv'
+2026-05-31 20:15:47,663 - INFO - Database Loading Process Started
+2026-05-31 20:15:47,665 - INFO - Database Process Failed: [Errno 2] No such file or directory: '../dataset/healed_transactions.csv'
+2026-05-31 20:15:49,383 - INFO - Failure Prediction Started
+2026-05-31 20:15:49,386 - INFO - Failure Prediction Failed: [Errno 2] No such file or directory: '../dataset/anomaly_results.csv'
+2026-05-31 20:18:28,395 - INFO - ETL process started
+2026-05-31 20:18:28,409 - INFO - ETL process failed: [Errno 2] No such file or directory: '../dataset/transactions.csv'
+2026-05-31 20:18:32,878 - INFO - Anomaly Detection Process Started
+2026-05-31 20:18:32,881 - INFO - Anomaly Detection Failed: [Errno 2] No such file or directory: '../dataset/clean_transactions.csv'
+2026-05-31 20:18:34,898 - INFO - Self-Healing Process Started
+2026-05-31 20:18:34,900 - INFO - Self-Healing Failed: [Errno 2] No such file or directory: '../dataset/anomaly_results.csv'
+2026-05-31 20:18:36,511 - INFO - Database Loading Process Started
+2026-05-31 20:18:36,514 - INFO - Database Process Failed: [Errno 2] No such file or directory: '../dataset/healed_transactions.csv'
+2026-05-31 20:18:38,186 - INFO - Failure Prediction Started
+2026-05-31 20:18:38,188 - INFO - Failure Prediction Failed: [Errno 2] No such file or directory: '../dataset/anomaly_results.csv'
+2026-05-31 20:21:08,741 - INFO - ETL process started
+2026-05-31 20:21:08,788 - INFO - Dataset loaded successfully. Records: 1000
+2026-05-31 20:21:08,795 - INFO - Duplicates removed: 0
+2026-05-31 20:21:08,798 - INFO - Missing value handling started
+2026-05-31 20:21:08,804 - INFO - Missing values handled successfully
+2026-05-31 20:21:08,809 - INFO - Negative values corrected
+2026-05-31 20:21:08,814 - INFO - Validation completed. Invalid records removed: 0
+2026-05-31 20:21:08,815 - INFO - Data Quality Score: 100.00%
+2026-05-31 20:21:08,831 - INFO - clean_transactions.csv created successfully
+2026-05-31 20:21:08,849 - INFO - ETL process completed successfully
+2026-05-31 20:21:13,565 - INFO - Anomaly Detection Process Started
+2026-05-31 20:21:13,569 - INFO - Anomaly Detection Failed: [Errno 2] No such file or directory: '../dataset/clean_transactions.csv'
+2026-05-31 20:21:15,487 - INFO - Self-Healing Process Started
+2026-05-31 20:21:15,491 - INFO - Self-Healing Failed: [Errno 2] No such file or directory: '../dataset/anomaly_results.csv'
+2026-05-31 20:21:17,122 - INFO - Database Loading Process Started
+2026-05-31 20:21:17,124 - INFO - Database Process Failed: [Errno 2] No such file or directory: '../dataset/healed_transactions.csv'
+2026-05-31 20:21:18,707 - INFO - Failure Prediction Started
+2026-05-31 20:21:18,719 - INFO - Failure Prediction Failed: [Errno 2] No such file or directory: '../dataset/anomaly_results.csv'
+2026-05-31 20:55:33,463 - INFO - ETL process started
+2026-05-31 20:55:33,508 - INFO - Dataset loaded successfully. Records: 1000
+2026-05-31 20:55:33,517 - INFO - Duplicates removed: 0
+2026-05-31 20:55:33,525 - INFO - Missing value handling started
+2026-05-31 20:55:33,531 - INFO - Missing values handled successfully
+2026-05-31 20:55:33,533 - INFO - Negative values corrected
+2026-05-31 20:55:33,538 - INFO - Validation completed. Invalid records removed: 0
+2026-05-31 20:55:33,541 - INFO - Data Quality Score: 100.00%
+2026-05-31 20:55:33,558 - INFO - clean_transactions.csv created successfully
+2026-05-31 20:55:33,579 - INFO - ETL process completed successfully
+2026-05-31 20:55:38,210 - INFO - Anomaly Detection Process Started
+2026-05-31 20:55:38,214 - INFO - Anomaly Detection Failed: [Errno 2] No such file or directory: '../dataset/clean_transactions.csv'
+2026-05-31 20:55:39,850 - INFO - Self-Healing Process Started
+2026-05-31 20:55:39,856 - INFO - Self-Healing Failed: [Errno 2] No such file or directory: '../dataset/anomaly_results.csv'
+2026-05-31 20:55:41,406 - INFO - Database Loading Process Started
+2026-05-31 20:55:41,406 - INFO - Database Process Failed: [Errno 2] No such file or directory: '../dataset/healed_transactions.csv'
+2026-05-31 20:55:43,021 - INFO - Failure Prediction Started
+2026-05-31 20:55:43,023 - INFO - Failure Prediction Failed: [Errno 2] No such file or directory: '../dataset/anomaly_results.csv'
+2026-05-31 20:58:35,683 - INFO - ETL process started
+2026-05-31 20:58:35,721 - INFO - Dataset loaded successfully. Records: 1000
+2026-05-31 20:58:35,727 - INFO - Duplicates removed: 0
+2026-05-31 20:58:35,730 - INFO - Missing value handling started
+2026-05-31 20:58:35,738 - INFO - Missing values handled successfully
+2026-05-31 20:58:35,741 - INFO - Negative values corrected
+2026-05-31 20:58:35,744 - INFO - Validation completed. Invalid records removed: 0
+2026-05-31 20:58:35,745 - INFO - Data Quality Score: 100.00%
+2026-05-31 20:58:35,763 - INFO - clean_transactions.csv created successfully
+2026-05-31 20:58:35,783 - INFO - ETL process completed successfully
+2026-05-31 20:58:40,246 - INFO - Anomaly Detection Process Started
+2026-05-31 20:58:40,272 - INFO - Dataset Loaded Successfully. Records: 1000
+2026-05-31 20:58:40,276 - INFO - Features Selected: Quantity, TotalValue, Price
+2026-05-31 20:58:40,277 - INFO - Isolation Forest Model Created
+2026-05-31 20:58:40,653 - INFO - Anomaly Prediction Completed
+2026-05-31 20:58:40,660 - INFO - Normal Records: 980
+2026-05-31 20:58:40,660 - INFO - Anomalies Detected: 20
+2026-05-31 20:58:40,676 - INFO - anomaly_results.csv created successfully
+2026-05-31 20:58:40,710 - INFO - Displayed First 20 Anomalies
+2026-05-31 20:58:40,712 - INFO - Anomaly Detection Process Completed Successfully
+2026-05-31 20:58:42,511 - INFO - Self-Healing Process Started
+2026-05-31 20:58:42,511 - INFO - Self-Healing Failed: [Errno 2] No such file or directory: '../dataset/anomaly_results.csv'
+2026-05-31 20:58:44,270 - INFO - Database Loading Process Started
+2026-05-31 20:58:44,273 - INFO - Database Process Failed: [Errno 2] No such file or directory: '../dataset/healed_transactions.csv'
+2026-05-31 20:58:45,987 - INFO - Failure Prediction Started
+2026-05-31 20:58:45,990 - INFO - Failure Prediction Failed: [Errno 2] No such file or directory: '../dataset/anomaly_results.csv'
+2026-05-31 21:02:50,557 - INFO - ETL process started
+2026-05-31 21:02:50,602 - INFO - Dataset loaded successfully. Records: 1000
+2026-05-31 21:02:50,609 - INFO - Duplicates removed: 0
+2026-05-31 21:02:50,612 - INFO - Missing value handling started
+2026-05-31 21:02:50,617 - INFO - Missing values handled successfully
+2026-05-31 21:02:50,619 - INFO - Negative values corrected
+2026-05-31 21:02:50,621 - INFO - Validation completed. Invalid records removed: 0
+2026-05-31 21:02:50,623 - INFO - Data Quality Score: 100.00%
+2026-05-31 21:02:50,638 - INFO - clean_transactions.csv created successfully
+2026-05-31 21:02:50,659 - INFO - ETL process completed successfully
+2026-05-31 21:02:55,441 - INFO - Anomaly Detection Process Started
+2026-05-31 21:02:55,458 - INFO - Dataset Loaded Successfully. Records: 1000
+2026-05-31 21:02:55,461 - INFO - Features Selected: Quantity, TotalValue, Price
+2026-05-31 21:02:55,462 - INFO - Isolation Forest Model Created
+2026-05-31 21:02:55,741 - INFO - Anomaly Prediction Completed
+2026-05-31 21:02:55,747 - INFO - Normal Records: 980
+2026-05-31 21:02:55,747 - INFO - Anomalies Detected: 20
+2026-05-31 21:02:55,758 - INFO - anomaly_results.csv created successfully
+2026-05-31 21:02:55,790 - INFO - Displayed First 20 Anomalies
+2026-05-31 21:02:55,791 - INFO - Anomaly Detection Process Completed Successfully
+2026-05-31 21:02:57,639 - INFO - Self-Healing Process Started
+2026-05-31 21:02:57,656 - INFO - Anomaly Results Loaded Successfully. Records: 1000
+2026-05-31 21:02:57,663 - INFO - Normal Records: 980
+2026-05-31 21:02:57,663 - INFO - Anomalies Found: 20
+2026-05-31 21:02:57,667 - INFO - Median Quantity Used: 3.0
+2026-05-31 21:02:57,667 - INFO - Median Price Used: 299.93
+2026-05-31 21:02:57,669 - INFO - Anomaly Records Healed Successfully
+2026-05-31 21:02:57,671 - INFO - Final Records After Healing: 1000
+2026-05-31 21:02:57,685 - INFO - healed_transactions.csv created successfully
+2026-05-31 21:02:57,686 - INFO - Total Healed Records: 20
+2026-05-31 21:02:57,686 - INFO - Self-Healing Process Completed Successfully
+2026-05-31 21:02:59,274 - INFO - Database Loading Process Started
+2026-05-31 21:02:59,276 - INFO - Database Process Failed: [Errno 2] No such file or directory: '../dataset/healed_transactions.csv'
+2026-05-31 21:03:00,953 - INFO - Failure Prediction Started
+2026-05-31 21:03:00,956 - INFO - Failure Prediction Failed: [Errno 2] No such file or directory: '../dataset/anomaly_results.csv'
+2026-05-31 21:06:23,610 - INFO - ETL process started
+2026-05-31 21:06:23,647 - INFO - Dataset loaded successfully. Records: 1000
+2026-05-31 21:06:23,651 - INFO - Duplicates removed: 0
+2026-05-31 21:06:23,656 - INFO - Missing value handling started
+2026-05-31 21:06:23,661 - INFO - Missing values handled successfully
+2026-05-31 21:06:23,663 - INFO - Negative values corrected
+2026-05-31 21:06:23,666 - INFO - Validation completed. Invalid records removed: 0
+2026-05-31 21:06:23,668 - INFO - Data Quality Score: 100.00%
+2026-05-31 21:06:23,684 - INFO - clean_transactions.csv created successfully
+2026-05-31 21:06:23,702 - INFO - ETL process completed successfully
+2026-05-31 21:06:28,368 - INFO - Anomaly Detection Process Started
+2026-05-31 21:06:28,385 - INFO - Dataset Loaded Successfully. Records: 1000
+2026-05-31 21:06:28,389 - INFO - Features Selected: Quantity, TotalValue, Price
+2026-05-31 21:06:28,391 - INFO - Isolation Forest Model Created
+2026-05-31 21:06:28,681 - INFO - Anomaly Prediction Completed
+2026-05-31 21:06:28,688 - INFO - Normal Records: 980
+2026-05-31 21:06:28,688 - INFO - Anomalies Detected: 20
+2026-05-31 21:06:28,703 - INFO - anomaly_results.csv created successfully
+2026-05-31 21:06:28,737 - INFO - Displayed First 20 Anomalies
+2026-05-31 21:06:28,740 - INFO - Anomaly Detection Process Completed Successfully
+2026-05-31 21:06:30,690 - INFO - Self-Healing Process Started
+2026-05-31 21:06:30,722 - INFO - Anomaly Results Loaded Successfully. Records: 1000
+2026-05-31 21:06:30,735 - INFO - Normal Records: 980
+2026-05-31 21:06:30,736 - INFO - Anomalies Found: 20
+2026-05-31 21:06:30,741 - INFO - Median Quantity Used: 3.0
+2026-05-31 21:06:30,742 - INFO - Median Price Used: 299.93
+2026-05-31 21:06:30,746 - INFO - Anomaly Records Healed Successfully
+2026-05-31 21:06:30,748 - INFO - Final Records After Healing: 1000
+2026-05-31 21:06:30,760 - INFO - healed_transactions.csv created successfully
+2026-05-31 21:06:30,762 - INFO - Total Healed Records: 20
+2026-05-31 21:06:30,763 - INFO - Self-Healing Process Completed Successfully
+2026-05-31 21:06:32,546 - INFO - Database Loading Process Started
+2026-05-31 21:06:32,570 - INFO - Healed Dataset Loaded Successfully. Records: 1000
+2026-05-31 21:06:32,582 - INFO - Connected to SQLite Database
+2026-05-31 21:06:32,632 - INFO - Transactions Table Created Successfully
+2026-05-31 21:06:32,633 - INFO - Records Stored in Database: 1000
+2026-05-31 21:06:32,634 - INFO - Database Connection Closed
+2026-05-31 21:06:32,634 - INFO - Database Loading Process Completed Successfully
+2026-05-31 21:06:34,409 - INFO - Failure Prediction Started
+2026-05-31 21:06:34,412 - INFO - Failure Prediction Failed: [Errno 2] No such file or directory: '../dataset/anomaly_results.csv'
+2026-05-31 21:15:52,755 - INFO - ETL process started
+2026-05-31 21:15:52,801 - INFO - Dataset loaded successfully. Records: 1000
+2026-05-31 21:15:52,806 - INFO - Duplicates removed: 0
+2026-05-31 21:15:52,811 - INFO - Missing value handling started
+2026-05-31 21:15:52,815 - INFO - Missing values handled successfully
+2026-05-31 21:15:52,817 - INFO - Negative values corrected
+2026-05-31 21:15:52,820 - INFO - Validation completed. Invalid records removed: 0
+2026-05-31 21:15:52,822 - INFO - Data Quality Score: 100.00%
+2026-05-31 21:15:52,836 - INFO - clean_transactions.csv created successfully
+2026-05-31 21:15:52,857 - INFO - ETL process completed successfully
+2026-05-31 21:15:58,191 - INFO - Anomaly Detection Process Started
+2026-05-31 21:15:58,209 - INFO - Dataset Loaded Successfully. Records: 1000
+2026-05-31 21:15:58,213 - INFO - Features Selected: Quantity, TotalValue, Price
+2026-05-31 21:15:58,215 - INFO - Isolation Forest Model Created
+2026-05-31 21:15:58,601 - INFO - Anomaly Prediction Completed
+2026-05-31 21:15:58,608 - INFO - Normal Records: 980
+2026-05-31 21:15:58,608 - INFO - Anomalies Detected: 20
+2026-05-31 21:15:58,629 - INFO - anomaly_results.csv created successfully
+2026-05-31 21:15:58,671 - INFO - Displayed First 20 Anomalies
+2026-05-31 21:15:58,671 - INFO - Anomaly Detection Process Completed Successfully
+2026-05-31 21:16:01,036 - INFO - Self-Healing Process Started
+2026-05-31 21:16:01,053 - INFO - Anomaly Results Loaded Successfully. Records: 1000
+2026-05-31 21:16:01,061 - INFO - Normal Records: 980
+2026-05-31 21:16:01,061 - INFO - Anomalies Found: 20
+2026-05-31 21:16:01,065 - INFO - Median Quantity Used: 3.0
+2026-05-31 21:16:01,065 - INFO - Median Price Used: 299.93
+2026-05-31 21:16:01,066 - INFO - Anomaly Records Healed Successfully
+2026-05-31 21:16:01,067 - INFO - Final Records After Healing: 1000
+2026-05-31 21:16:01,078 - INFO - healed_transactions.csv created successfully
+2026-05-31 21:16:01,078 - INFO - Total Healed Records: 20
+2026-05-31 21:16:01,078 - INFO - Self-Healing Process Completed Successfully
+2026-05-31 21:16:02,836 - INFO - Database Loading Process Started
+2026-05-31 21:16:02,852 - INFO - Healed Dataset Loaded Successfully. Records: 1000
+2026-05-31 21:16:02,853 - INFO - Connected to SQLite Database
+2026-05-31 21:16:02,889 - INFO - Transactions Table Created Successfully
+2026-05-31 21:16:02,890 - INFO - Records Stored in Database: 1000
+2026-05-31 21:16:02,890 - INFO - Database Connection Closed
+2026-05-31 21:16:02,890 - INFO - Database Loading Process Completed Successfully
+2026-05-31 21:16:04,525 - INFO - Failure Prediction Started
+2026-05-31 21:16:04,548 - INFO - Anomaly Rate: 2.00%
+2026-05-31 21:16:04,548 - INFO - Failure Risk Predicted: MEDIUM
+2026-05-31 21:16:04,557 - INFO - failure_prediction.csv created
+2026-05-31 21:16:04,557 - INFO - Failure Prediction Completed
+2026-06-01 11:00:48,629 - INFO - ETL process started
+2026-06-01 11:00:48,702 - INFO - Dataset loaded successfully. Records: 1000
+2026-06-01 11:00:48,712 - INFO - Duplicates removed: 0
+2026-06-01 11:00:48,722 - INFO - Missing value handling started
+2026-06-01 11:00:48,729 - INFO - Missing values handled successfully
+2026-06-01 11:00:48,734 - INFO - Negative values corrected
+2026-06-01 11:00:48,739 - INFO - Validation completed. Invalid records removed: 0
+2026-06-01 11:00:48,744 - INFO - Data Quality Score: 100.00%
+2026-06-01 11:00:48,767 - INFO - clean_transactions.csv created successfully
+2026-06-01 11:00:48,808 - INFO - ETL process completed successfully
+2026-06-01 11:01:12,648 - INFO - Anomaly Detection Process Started
+2026-06-01 11:01:12,663 - INFO - Dataset Loaded Successfully. Records: 1000
+2026-06-01 11:01:12,667 - INFO - Features Selected: Quantity, TotalValue, Price
+2026-06-01 11:01:12,667 - INFO - Isolation Forest Model Created
+2026-06-01 11:01:12,963 - INFO - Anomaly Prediction Completed
+2026-06-01 11:01:12,970 - INFO - Normal Records: 980
+2026-06-01 11:01:12,971 - INFO - Anomalies Detected: 20
+2026-06-01 11:01:12,984 - INFO - anomaly_results.csv created successfully
+2026-06-01 11:01:13,027 - INFO - Displayed First 20 Anomalies
+2026-06-01 11:01:13,028 - INFO - Anomaly Detection Process Completed Successfully
+2026-06-01 11:01:15,334 - INFO - Self-Healing Process Started
+2026-06-01 11:01:15,354 - INFO - Anomaly Results Loaded Successfully. Records: 1000
+2026-06-01 11:01:15,364 - INFO - Normal Records: 980
+2026-06-01 11:01:15,365 - INFO - Anomalies Found: 20
+2026-06-01 11:01:15,370 - INFO - Median Quantity Used: 3.0
+2026-06-01 11:01:15,371 - INFO - Median Price Used: 299.93
+2026-06-01 11:01:15,373 - INFO - Anomaly Records Healed Successfully
+2026-06-01 11:01:15,375 - INFO - Final Records After Healing: 1000
+2026-06-01 11:01:15,391 - INFO - healed_transactions.csv created successfully
+2026-06-01 11:01:15,392 - INFO - Total Healed Records: 20
+2026-06-01 11:01:15,393 - INFO - Self-Healing Process Completed Successfully
+2026-06-01 11:01:17,733 - INFO - Database Loading Process Started
+2026-06-01 11:01:17,753 - INFO - Healed Dataset Loaded Successfully. Records: 1000
+2026-06-01 11:01:17,761 - INFO - Connected to SQLite Database
+2026-06-01 11:01:17,818 - INFO - Transactions Table Created Successfully
+2026-06-01 11:01:17,820 - INFO - Records Stored in Database: 1000
+2026-06-01 11:01:17,820 - INFO - Database Connection Closed
+2026-06-01 11:01:17,820 - INFO - Database Loading Process Completed Successfully
+2026-06-01 11:01:19,882 - INFO - Failure Prediction Started
+2026-06-01 11:01:19,906 - INFO - Anomaly Rate: 2.00%
+2026-06-01 11:01:19,907 - INFO - Failure Risk Predicted: MEDIUM
+2026-06-01 11:01:19,914 - INFO - failure_prediction.csv created
+2026-06-01 11:01:19,915 - INFO - Failure Prediction Completed
+2026-06-01 12:39:18,568 - INFO - ETL Process Started
+2026-06-01 12:39:21,753 - INFO - Dataset loaded. Records: 284807, Columns: 31
+2026-06-01 12:39:23,182 - INFO - Duplicates removed: 1081
+2026-06-01 12:39:23,306 - INFO - Missing values handled. Rows dropped due to missing Class: 0
+2026-06-01 12:39:23,308 - INFO - Data types normalized
+2026-06-01 12:39:23,311 - INFO - Negative Amount values fixed: 0
+2026-06-01 12:39:23,315 - INFO - Class Distribution — Normal: 283253, Fraud: 473, Fraud Rate: 0.1667%
+2026-06-01 12:39:23,347 - INFO - Data Quality Score: 100.00%
+2026-06-01 12:39:41,621 - INFO - clean_transactions.csv created. Final records: 283726
+2026-06-01 12:39:41,621 - INFO - ETL Process Completed Successfully
+2026-06-01 12:43:48,199 - INFO - Anomaly Detection Process Started
+2026-06-01 12:43:51,111 - INFO - Dataset Loaded. Records: 283726
+2026-06-01 12:43:51,114 - INFO - Features Selected: 30 columns (V1-V28, Amount, Time)
+2026-06-01 12:43:51,275 - INFO - Amount and Time normalized using StandardScaler
+2026-06-01 12:43:51,276 - INFO - Isolation Forest Model Training Started
+2026-06-01 12:43:56,782 - INFO - Isolation Forest Model Training Completed
+2026-06-01 12:43:56,806 - INFO - Normal Records: 283243
+2026-06-01 12:43:56,807 - INFO - Anomalies Detected: 483
+2026-06-01 12:44:06,970 - INFO - Fraud Detection Rate: 22.20%
+2026-06-01 12:44:06,972 - INFO - Caught 105 out of 473 real fraud cases
+2026-06-01 12:44:32,644 - INFO - anomaly_results.csv created successfully
+2026-06-01 12:44:32,726 - INFO - Anomaly Detection Process Completed Successfully
+2026-06-01 12:48:02,892 - INFO - Self-Healing Process Started
+2026-06-01 12:48:05,669 - INFO - Anomaly Results Loaded. Records: 283726
+2026-06-01 12:48:05,845 - INFO - Normal Records: 283243
+2026-06-01 12:48:05,846 - INFO - Anomalies Found: 483
+2026-06-01 12:48:05,859 - INFO - Median Amount used for healing: 22.00
+2026-06-01 12:48:05,861 - INFO - Amount healed — extreme values replaced with median
+2026-06-01 12:48:06,279 - INFO - V1-V28 healing: 6850 extreme values replaced with column medians
+2026-06-01 12:48:06,291 - INFO - HealingStatus column added
+2026-06-01 12:48:06,313 - INFO - Quarantined confirmed fraud records: 105
+2026-06-01 12:48:23,979 - INFO - Final Records: 283726
+2026-06-01 12:48:23,980 - INFO - Healed: 378, Quarantined: 105
+2026-06-01 12:48:23,981 - INFO - healed_transactions.csv created successfully
+2026-06-01 12:48:23,981 - INFO - Self-Healing Process Completed Successfully
+2026-06-01 12:51:25,417 - INFO - Database Process Started
+2026-06-01 12:51:31,127 - INFO - Healed Dataset Loaded. Records: 283726
+2026-06-01 12:51:31,127 - INFO - Anomaly Results Loaded. Records: 283726
+2026-06-01 12:51:31,140 - INFO - Connected to SQLite Database
+2026-06-01 12:51:34,966 - INFO - transactions table created. Records: 283726
+2026-06-01 12:51:38,452 - INFO - anomaly_results table created. Records: 283726
+2026-06-01 12:51:38,512 - INFO - healing_summary table created
+2026-06-01 12:51:38,672 - INFO - fraud_summary table created
+2026-06-01 12:51:39,021 - INFO - Tables in DB: ['transactions', 'anomaly_results', 'healing_summary', 'fraud_summary']
+2026-06-01 12:51:39,029 - INFO - Database Connection Closed
+2026-06-01 12:51:39,029 - INFO - Database Process Completed Successfully
+2026-06-01 12:54:12,340 - INFO - Failure Prediction Started
+2026-06-01 12:54:18,023 - INFO - Total Records: 283726
+2026-06-01 12:54:18,026 - INFO - Anomalies: 483, Anomaly Rate: 0.1702%
+2026-06-01 12:54:18,026 - INFO - Confirmed Fraud: 105, Fraud Rate: 0.0370%
+2026-06-01 12:54:18,026 - INFO - Healing Rate: 78.26%
+2026-06-01 12:54:18,026 - INFO - Failure Risk: MEDIUM
+2026-06-01 12:54:18,026 - INFO - Risk Score: 96.6
+2026-06-01 12:54:18,026 - INFO - Health Score: 99.83%
+2026-06-01 12:54:18,033 - INFO - Detection Rate: 22.20%
+2026-06-01 12:54:18,035 - INFO - False Positives: 378, FP Rate: 0.1335%
+2026-06-01 12:54:18,045 - INFO - failure_prediction.csv created
+2026-06-01 12:54:18,047 - INFO - Failure Prediction Completed
+2026-06-01 12:55:55,644 - INFO - ETL Process Started
+2026-06-01 12:55:58,407 - INFO - Dataset loaded. Records: 284807, Columns: 31
+2026-06-01 12:55:59,814 - INFO - Duplicates removed: 1081
+2026-06-01 12:55:59,937 - INFO - Missing values handled. Rows dropped due to missing Class: 0
+2026-06-01 12:55:59,939 - INFO - Data types normalized
+2026-06-01 12:55:59,944 - INFO - Negative Amount values fixed: 0
+2026-06-01 12:55:59,948 - INFO - Class Distribution — Normal: 283253, Fraud: 473, Fraud Rate: 0.1667%
+2026-06-01 12:55:59,982 - INFO - Data Quality Score: 100.00%
+2026-06-01 12:56:17,840 - INFO - clean_transactions.csv created. Final records: 283726
+2026-06-01 12:56:17,841 - INFO - ETL Process Completed Successfully
+2026-06-01 12:56:22,517 - INFO - Anomaly Detection Process Started
+2026-06-01 12:56:26,086 - INFO - Dataset Loaded. Records: 283726
+2026-06-01 12:56:26,091 - INFO - Features Selected: 30 columns (V1-V28, Amount, Time)
+2026-06-01 12:56:26,203 - INFO - Amount and Time normalized using StandardScaler
+2026-06-01 12:56:26,204 - INFO - Isolation Forest Model Training Started
+2026-06-01 12:56:32,112 - INFO - Isolation Forest Model Training Completed
+2026-06-01 12:56:32,147 - INFO - Normal Records: 283243
+2026-06-01 12:56:32,149 - INFO - Anomalies Detected: 483
+2026-06-01 12:56:43,473 - INFO - Fraud Detection Rate: 22.20%
+2026-06-01 12:56:43,475 - INFO - Caught 105 out of 473 real fraud cases
+2026-06-01 12:57:01,655 - INFO - anomaly_results.csv created successfully
+2026-06-01 12:57:01,745 - INFO - Anomaly Detection Process Completed Successfully
+2026-06-01 12:57:03,736 - INFO - Self-Healing Process Started
+2026-06-01 12:57:06,725 - INFO - Anomaly Results Loaded. Records: 283726
+2026-06-01 12:57:07,007 - INFO - Normal Records: 283243
+2026-06-01 12:57:07,007 - INFO - Anomalies Found: 483
+2026-06-01 12:57:07,021 - INFO - Median Amount used for healing: 22.00
+2026-06-01 12:57:07,023 - INFO - Amount healed — extreme values replaced with median
+2026-06-01 12:57:07,593 - INFO - V1-V28 healing: 6850 extreme values replaced with column medians
+2026-06-01 12:57:07,607 - INFO - HealingStatus column added
+2026-06-01 12:57:07,613 - INFO - Quarantined confirmed fraud records: 105
+2026-06-01 12:57:25,045 - INFO - Final Records: 283726
+2026-06-01 12:57:25,047 - INFO - Healed: 378, Quarantined: 105
+2026-06-01 12:57:25,047 - INFO - healed_transactions.csv created successfully
+2026-06-01 12:57:25,047 - INFO - Self-Healing Process Completed Successfully
+2026-06-01 12:57:26,682 - INFO - Database Process Started
+2026-06-01 12:57:32,704 - INFO - Healed Dataset Loaded. Records: 283726
+2026-06-01 12:57:32,705 - INFO - Anomaly Results Loaded. Records: 283726
+2026-06-01 12:57:32,707 - INFO - Connected to SQLite Database
+2026-06-01 12:57:36,545 - INFO - transactions table created. Records: 283726
+2026-06-01 12:57:40,004 - INFO - anomaly_results table created. Records: 283726
+2026-06-01 12:57:40,050 - INFO - healing_summary table created
+2026-06-01 12:57:40,192 - INFO - fraud_summary table created
+2026-06-01 12:57:40,586 - INFO - Tables in DB: ['transactions', 'anomaly_results', 'healing_summary', 'fraud_summary']
+2026-06-01 12:57:40,598 - INFO - Database Connection Closed
+2026-06-01 12:57:40,599 - INFO - Database Process Completed Successfully
+2026-06-01 12:57:42,437 - INFO - Failure Prediction Started
+2026-06-01 12:57:48,776 - INFO - Total Records: 283726
+2026-06-01 12:57:48,776 - INFO - Anomalies: 483, Anomaly Rate: 0.1702%
+2026-06-01 12:57:48,784 - INFO - Confirmed Fraud: 105, Fraud Rate: 0.0370%
+2026-06-01 12:57:48,784 - INFO - Healing Rate: 78.26%
+2026-06-01 12:57:48,784 - INFO - Failure Risk: MEDIUM
+2026-06-01 12:57:48,784 - INFO - Risk Score: 96.6
+2026-06-01 12:57:48,784 - INFO - Health Score: 99.83%
+2026-06-01 12:57:48,784 - INFO - Detection Rate: 22.20%
+2026-06-01 12:57:48,784 - INFO - False Positives: 378, FP Rate: 0.1335%
+2026-06-01 12:57:48,798 - INFO - failure_prediction.csv created
+2026-06-01 12:57:48,798 - INFO - Failure Prediction Completed
+2026-06-01 13:38:09,034 - INFO - ETL Process Started
+2026-06-01 13:38:12,299 - INFO - Dataset loaded. Records: 284807, Columns: 31
+2026-06-01 13:38:14,280 - INFO - Duplicates removed: 1081
+2026-06-01 13:38:14,451 - INFO - Missing values handled. Rows dropped due to missing Class: 0
+2026-06-01 13:38:14,455 - INFO - Data types normalized
+2026-06-01 13:38:14,462 - INFO - Negative Amount values fixed: 0
+2026-06-01 13:38:14,468 - INFO - Class Distribution — Normal: 283253, Fraud: 473, Fraud Rate: 0.1667%
+2026-06-01 13:38:14,518 - INFO - Data Quality Score: 100.00%
+2026-06-01 13:38:34,991 - INFO - clean_transactions.csv created. Final records: 283726
+2026-06-01 13:38:34,992 - INFO - ETL Process Completed Successfully
+2026-06-01 13:38:40,311 - INFO - Anomaly Detection Process Started
+2026-06-01 13:38:44,867 - INFO - Dataset Loaded. Records: 283726, Columns: 31
+2026-06-01 13:38:44,870 - INFO - Auto-detected 30 feature columns: ['Time', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount']
+2026-06-01 13:38:45,351 - INFO - All features normalized using StandardScaler
+2026-06-01 13:38:45,353 - INFO - Label column 'Class' found. Contamination: 0.001667
+2026-06-01 13:38:45,355 - INFO - Isolation Forest Training Started
+2026-06-01 13:38:52,376 - INFO - Isolation Forest Training Completed
+2026-06-01 13:38:52,390 - INFO - Normal Records: 283253
+2026-06-01 13:38:52,390 - INFO - Anomalies Detected: 473
+2026-06-01 13:39:03,073 - INFO - Detection Rate: 16.28%
+2026-06-01 13:39:03,074 - INFO - Caught 77 out of 473 real fraud cases
+2026-06-01 13:39:20,598 - INFO - anomaly_results.csv created successfully
+2026-06-01 13:39:20,667 - INFO - Anomaly Detection Process Completed Successfully
+2026-06-01 13:39:22,477 - INFO - Self-Healing Process Started
+2026-06-01 13:39:25,366 - INFO - Anomaly Results Loaded. Records: 283726
+2026-06-01 13:39:25,633 - INFO - Normal Records: 283253
+2026-06-01 13:39:25,636 - INFO - Anomalies Found: 473
+2026-06-01 13:39:25,648 - INFO - Median Amount used for healing: 22.00
+2026-06-01 13:39:25,650 - INFO - Amount healed — extreme values replaced with median
+2026-06-01 13:39:26,086 - INFO - V1-V28 healing: 6600 extreme values replaced with column medians
+2026-06-01 13:39:26,109 - INFO - HealingStatus column added
+2026-06-01 13:39:26,109 - INFO - Quarantined confirmed fraud records: 77
+2026-06-01 13:39:43,935 - INFO - Final Records: 283726
+2026-06-01 13:39:43,943 - INFO - Healed: 396, Quarantined: 77
+2026-06-01 13:39:43,944 - INFO - healed_transactions.csv created successfully
+2026-06-01 13:39:43,944 - INFO - Self-Healing Process Completed Successfully
+2026-06-01 13:39:45,644 - INFO - Database Process Started
+2026-06-01 13:39:52,043 - INFO - Healed Dataset Loaded. Records: 283726
+2026-06-01 13:39:52,044 - INFO - Anomaly Results Loaded. Records: 283726
+2026-06-01 13:39:52,046 - INFO - Connected to SQLite Database
+2026-06-01 13:39:57,088 - INFO - transactions table created. Records: 283726
+2026-06-01 13:40:05,829 - INFO - anomaly_results table created. Records: 283726
+2026-06-01 13:40:05,891 - INFO - healing_summary table created
+2026-06-01 13:40:06,090 - INFO - fraud_summary table created
+2026-06-01 13:40:06,623 - INFO - Tables in DB: ['transactions', 'anomaly_results', 'healing_summary', 'fraud_summary']
+2026-06-01 13:40:06,623 - INFO - Database Connection Closed
+2026-06-01 13:40:06,623 - INFO - Database Process Completed Successfully
+2026-06-01 13:40:08,546 - INFO - Failure Prediction Started
+2026-06-01 13:40:16,205 - INFO - Total Records: 283726
+2026-06-01 13:40:16,205 - INFO - Anomalies: 473, Anomaly Rate: 0.1667%
+2026-06-01 13:40:16,207 - INFO - Confirmed Fraud: 77, Fraud Rate: 0.0271%
+2026-06-01 13:40:16,207 - INFO - Healing Rate: 83.72%
+2026-06-01 13:40:16,207 - INFO - Failure Risk: MEDIUM
+2026-06-01 13:40:16,207 - INFO - Risk Score: 96.67
+2026-06-01 13:40:16,207 - INFO - Health Score: 99.83%
+2026-06-01 13:40:16,211 - INFO - Detection Rate: 16.28%
+2026-06-01 13:40:16,211 - INFO - False Positives: 396, FP Rate: 0.1398%
+2026-06-01 13:40:16,220 - INFO - failure_prediction.csv created
+2026-06-01 13:40:16,220 - INFO - Failure Prediction Completed
+2026-06-02 13:06:47,289 - INFO - ETL Process Started
+2026-06-02 13:06:50,908 - INFO - Dataset loaded. Records: 284807, Columns: 31
+2026-06-02 13:06:53,178 - INFO - Duplicates removed: 1081
+2026-06-02 13:06:53,388 - INFO - Missing values handled. Rows dropped due to missing Class: 0
+2026-06-02 13:06:53,391 - INFO - Data types normalized
+2026-06-02 13:06:53,400 - INFO - Negative Amount values fixed: 0
+2026-06-02 13:06:53,405 - INFO - Class Distribution — Normal: 283253, Fraud: 473, Fraud Rate: 0.1667%
+2026-06-02 13:06:53,453 - INFO - Data Quality Score: 100.00%
+2026-06-02 13:07:12,430 - INFO - clean_transactions.csv created. Final records: 283726
+2026-06-02 13:07:12,430 - INFO - ETL Process Completed Successfully
+2026-06-02 13:07:21,665 - INFO - Anomaly Detection Process Started
+2026-06-02 13:07:25,441 - INFO - Dataset Loaded. Records: 283726, Columns: 31
+2026-06-02 13:07:25,443 - INFO - Auto-detected 30 feature columns: ['Time', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount']
+2026-06-02 13:07:25,929 - INFO - All features normalized using StandardScaler
+2026-06-02 13:07:25,933 - INFO - Label column 'Class' found. Contamination: 0.001667
+2026-06-02 13:07:25,938 - INFO - Isolation Forest Training Started
+2026-06-02 13:07:32,781 - INFO - Isolation Forest Training Completed
+2026-06-02 13:07:32,794 - INFO - Normal Records: 283253
+2026-06-02 13:07:32,795 - INFO - Anomalies Detected: 473
+2026-06-02 13:07:44,471 - INFO - Detection Rate: 16.28%
+2026-06-02 13:07:44,471 - INFO - Caught 77 out of 473 real fraud cases
+2026-06-02 13:08:08,525 - INFO - anomaly_results.csv created successfully
+2026-06-02 13:08:08,649 - INFO - Anomaly Detection Process Completed Successfully
+2026-06-02 13:08:11,503 - INFO - Self-Healing Process Started
+2026-06-02 13:08:15,853 - INFO - Anomaly Results Loaded. Records: 283726
+2026-06-02 13:08:16,121 - INFO - Normal Records: 283253
+2026-06-02 13:08:16,121 - INFO - Anomalies Found: 473
+2026-06-02 13:08:16,139 - INFO - Median Amount used for healing: 22.00
+2026-06-02 13:08:16,143 - INFO - Amount healed — extreme values replaced with median
+2026-06-02 13:08:16,651 - INFO - V1-V28 healing: 6600 extreme values replaced with column medians
+2026-06-02 13:08:16,664 - INFO - HealingStatus column added
+2026-06-02 13:08:16,677 - INFO - Quarantined confirmed fraud records: 77
+2026-06-02 13:08:37,093 - INFO - Final Records: 283726
+2026-06-02 13:08:37,094 - INFO - Healed: 396, Quarantined: 77
+2026-06-02 13:08:37,094 - INFO - healed_transactions.csv created successfully
+2026-06-02 13:08:37,095 - INFO - Self-Healing Process Completed Successfully
+2026-06-02 13:08:39,354 - INFO - Database Process Started
+2026-06-02 13:08:48,083 - INFO - Healed Dataset Loaded. Records: 283726
+2026-06-02 13:08:48,084 - INFO - Anomaly Results Loaded. Records: 283726
+2026-06-02 13:08:48,103 - INFO - Connected to SQLite Database
+2026-06-02 13:09:10,697 - INFO - transactions table created. Records: 283726
+2026-06-02 13:09:33,831 - INFO - anomaly_results table created. Records: 283726
+2026-06-02 13:09:33,974 - INFO - healing_summary table created
+2026-06-02 13:09:34,253 - INFO - fraud_summary table created
+2026-06-02 13:09:34,985 - INFO - Tables in DB: ['transactions', 'anomaly_results', 'healing_summary', 'fraud_summary']
+2026-06-02 13:09:34,987 - INFO - Database Connection Closed
+2026-06-02 13:09:34,987 - INFO - Database Process Completed Successfully
+2026-06-02 13:09:38,018 - INFO - Failure Prediction Started
+2026-06-02 13:09:47,398 - INFO - Total Records: 283726
+2026-06-02 13:09:47,399 - INFO - Anomalies: 473, Anomaly Rate: 0.1667%
+2026-06-02 13:09:47,399 - INFO - Confirmed Fraud: 77, Fraud Rate: 0.0271%
+2026-06-02 13:09:47,399 - INFO - Healing Rate: 83.72%
+2026-06-02 13:09:47,400 - INFO - Failure Risk: MEDIUM
+2026-06-02 13:09:47,400 - INFO - Risk Score: 96.67
+2026-06-02 13:09:47,400 - INFO - Health Score: 99.83%
+2026-06-02 13:09:47,406 - INFO - Detection Rate: 16.28%
+2026-06-02 13:09:47,406 - INFO - False Positives: 396, FP Rate: 0.1398%
+2026-06-02 13:09:47,426 - INFO - failure_prediction.csv created
+2026-06-02 13:09:47,426 - INFO - Failure Prediction Completed
+2026-06-02 15:49:03,205 - INFO - ETL Process Started
+2026-06-02 15:49:07,311 - INFO - Dataset loaded. Records: 284807, Columns: 31
+2026-06-02 15:49:09,441 - INFO - Duplicates removed: 1081
+2026-06-02 15:49:09,621 - INFO - Missing values handled. Rows dropped due to missing Class: 0
+2026-06-02 15:49:09,623 - INFO - Data types normalized
+2026-06-02 15:49:09,630 - INFO - Negative Amount values fixed: 0
+2026-06-02 15:49:09,637 - INFO - Class Distribution — Normal: 283253, Fraud: 473, Fraud Rate: 0.1667%
+2026-06-02 15:49:09,696 - INFO - Data Quality Score: 100.00%
+2026-06-02 15:49:31,293 - INFO - clean_transactions.csv created. Final records: 283726
+2026-06-02 15:49:31,293 - INFO - ETL Process Completed Successfully
+2026-06-02 15:49:45,133 - INFO - Anomaly Detection Process Started
+2026-06-02 15:49:50,168 - INFO - Dataset Loaded. Records: 283726, Columns: 31
+2026-06-02 15:49:50,174 - INFO - Auto-detected 30 feature columns: ['Time', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount']
+2026-06-02 15:49:50,939 - INFO - All features normalized using StandardScaler
+2026-06-02 15:49:50,943 - INFO - Label column 'Class' found. Contamination: 0.001667
+2026-06-02 15:49:50,948 - INFO - Isolation Forest Training Started
+2026-06-02 15:49:59,946 - INFO - Isolation Forest Training Completed
+2026-06-02 15:49:59,971 - INFO - Normal Records: 283253
+2026-06-02 15:49:59,971 - INFO - Anomalies Detected: 473
+2026-06-02 15:50:14,802 - INFO - Detection Rate: 16.28%
+2026-06-02 15:50:14,803 - INFO - Caught 77 out of 473 real fraud cases
+2026-06-02 15:50:44,912 - INFO - anomaly_results.csv created successfully
+2026-06-02 15:50:45,015 - INFO - Anomaly Detection Process Completed Successfully
+2026-06-02 15:50:48,624 - INFO - Self-Healing Process Started
+2026-06-02 15:50:54,783 - INFO - Anomaly Results Loaded. Records: 283726
+2026-06-02 15:50:55,137 - INFO - Normal Records: 283253
+2026-06-02 15:50:55,137 - INFO - Anomalies Found: 473
+2026-06-02 15:50:55,158 - INFO - Median Amount used for healing: 22.00
+2026-06-02 15:50:55,161 - INFO - Amount healed — extreme values replaced with median
+2026-06-02 15:50:55,767 - INFO - V1-V28 healing: 6600 extreme values replaced with column medians
+2026-06-02 15:50:55,784 - INFO - HealingStatus column added
+2026-06-02 15:50:55,794 - INFO - Quarantined confirmed fraud records: 77
+2026-06-02 15:51:18,820 - INFO - Final Records: 283726
+2026-06-02 15:51:18,822 - INFO - Healed: 396, Quarantined: 77
+2026-06-02 15:51:18,823 - INFO - healed_transactions.csv created successfully
+2026-06-02 15:51:18,823 - INFO - Self-Healing Process Completed Successfully
+2026-06-02 15:51:21,319 - INFO - Database Process Started
+2026-06-02 15:51:29,748 - INFO - Healed Dataset Loaded. Records: 283726
+2026-06-02 15:51:29,748 - INFO - Anomaly Results Loaded. Records: 283726
+2026-06-02 15:51:29,751 - INFO - Connected to SQLite Database
+2026-06-02 15:51:51,996 - INFO - transactions table created. Records: 283726
+2026-06-02 15:52:15,645 - INFO - anomaly_results table created. Records: 283726
+2026-06-02 15:52:15,759 - INFO - healing_summary table created
+2026-06-02 15:52:15,990 - INFO - fraud_summary table created
+2026-06-02 15:52:16,675 - INFO - Tables in DB: ['transactions', 'anomaly_results', 'healing_summary', 'fraud_summary']
+2026-06-02 15:52:16,677 - INFO - Database Connection Closed
+2026-06-02 15:52:16,677 - INFO - Database Process Completed Successfully
+2026-06-02 15:52:18,980 - INFO - Failure Prediction Started
+2026-06-02 15:52:29,009 - INFO - Total Records: 283726
+2026-06-02 15:52:29,011 - INFO - Anomalies: 473, Anomaly Rate: 0.1667%
+2026-06-02 15:52:29,011 - INFO - Confirmed Fraud: 77, Fraud Rate: 0.0271%
+2026-06-02 15:52:29,011 - INFO - Healing Rate: 83.72%
+2026-06-02 15:52:29,013 - INFO - Failure Risk: MEDIUM
+2026-06-02 15:52:29,013 - INFO - Risk Score: 96.67
+2026-06-02 15:52:29,014 - INFO - Health Score: 99.83%
+2026-06-02 15:52:29,020 - INFO - Detection Rate: 16.28%
+2026-06-02 15:52:29,021 - INFO - False Positives: 396, FP Rate: 0.1398%
+2026-06-02 15:52:29,039 - INFO - failure_prediction.csv created
+2026-06-02 15:52:29,040 - INFO - Failure Prediction Completed
+2026-06-02 19:48:24,654 - INFO - ETL Process Started
+2026-06-02 19:48:28,376 - INFO - Dataset loaded. Records: 284807, Columns: 31
+2026-06-02 19:48:30,060 - INFO - Duplicates removed: 1081
+2026-06-02 19:48:30,185 - INFO - Missing values handled. Rows dropped due to missing Class: 0
+2026-06-02 19:48:30,188 - INFO - Data types normalized
+2026-06-02 19:48:30,192 - INFO - Negative Amount values fixed: 0
+2026-06-02 19:48:30,196 - INFO - Class Distribution — Normal: 283253, Fraud: 473, Fraud Rate: 0.1667%
+2026-06-02 19:48:30,240 - INFO - Data Quality Score: 100.00%
+2026-06-02 19:48:48,700 - INFO - clean_transactions.csv created. Final records: 283726
+2026-06-02 19:48:48,701 - INFO - ETL Process Completed Successfully
+2026-06-02 19:49:00,804 - INFO - Anomaly Detection Process Started
+2026-06-02 19:49:04,948 - INFO - Dataset Loaded. Records: 283726, Columns: 31
+2026-06-02 19:49:04,957 - INFO - Auto-detected 30 feature columns: ['Time', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount']
+2026-06-02 19:49:05,390 - INFO - All features normalized using StandardScaler
+2026-06-02 19:49:05,390 - INFO - Label column 'Class' found. Contamination: 0.001667
+2026-06-02 19:49:05,399 - INFO - Isolation Forest Training Started
+2026-06-02 19:49:12,958 - INFO - Isolation Forest Training Completed
+2026-06-02 19:49:12,979 - INFO - Normal Records: 283253
+2026-06-02 19:49:12,979 - INFO - Anomalies Detected: 473
+2026-06-02 19:49:27,762 - INFO - Detection Rate: 16.28%
+2026-06-02 19:49:27,764 - INFO - Caught 77 out of 473 real fraud cases
+2026-06-02 19:49:48,621 - INFO - anomaly_results.csv created successfully
+2026-06-02 19:49:48,723 - INFO - Anomaly Detection Process Completed Successfully
+2026-06-02 19:49:50,879 - INFO - Self-Healing Process Started
+2026-06-02 19:49:54,745 - INFO - Anomaly Results Loaded. Records: 283726
+2026-06-02 19:49:55,000 - INFO - Normal Records: 283253
+2026-06-02 19:49:55,001 - INFO - Anomalies Found: 473
+2026-06-02 19:49:55,014 - INFO - Median Amount used for healing: 22.00
+2026-06-02 19:49:55,017 - INFO - Amount healed — extreme values replaced with median
+2026-06-02 19:49:55,579 - INFO - V1-V28 healing: 6600 extreme values replaced with column medians
+2026-06-02 19:49:55,596 - INFO - HealingStatus column added
+2026-06-02 19:49:55,614 - INFO - Quarantined confirmed fraud records: 77
+2026-06-02 19:50:14,763 - INFO - Final Records: 283726
+2026-06-02 19:50:14,764 - INFO - Healed: 396, Quarantined: 77
+2026-06-02 19:50:14,764 - INFO - healed_transactions.csv created successfully
+2026-06-02 19:50:14,765 - INFO - Self-Healing Process Completed Successfully
+2026-06-02 19:50:16,873 - INFO - Database Process Started
+2026-06-02 19:50:23,723 - INFO - Healed Dataset Loaded. Records: 283726
+2026-06-02 19:50:23,723 - INFO - Anomaly Results Loaded. Records: 283726
+2026-06-02 19:50:23,739 - INFO - Connected to SQLite Database
+2026-06-02 19:50:44,917 - INFO - transactions table created. Records: 283726
+2026-06-02 19:51:06,024 - INFO - anomaly_results table created. Records: 283726
+2026-06-02 19:51:06,092 - INFO - healing_summary table created
+2026-06-02 19:51:06,303 - INFO - fraud_summary table created
+2026-06-02 19:51:06,799 - INFO - Tables in DB: ['transactions', 'anomaly_results', 'healing_summary', 'fraud_summary']
+2026-06-02 19:51:06,802 - INFO - Database Connection Closed
+2026-06-02 19:51:06,802 - INFO - Database Process Completed Successfully
+2026-06-02 19:51:08,560 - INFO - Failure Prediction Started
+2026-06-02 19:51:17,078 - INFO - Total Records: 283726
+2026-06-02 19:51:17,079 - INFO - Anomalies: 473, Anomaly Rate: 0.1667%
+2026-06-02 19:51:17,079 - INFO - Confirmed Fraud: 77, Fraud Rate: 0.0271%
+2026-06-02 19:51:17,079 - INFO - Healing Rate: 83.72%
+2026-06-02 19:51:17,080 - INFO - Failure Risk: MEDIUM
+2026-06-02 19:51:17,081 - INFO - Risk Score: 96.67
+2026-06-02 19:51:17,081 - INFO - Health Score: 99.83%
+2026-06-02 19:51:17,088 - INFO - Detection Rate: 16.28%
+2026-06-02 19:51:17,088 - INFO - False Positives: 396, FP Rate: 0.1398%
+2026-06-02 19:51:17,109 - INFO - failure_prediction.csv created
+2026-06-02 19:51:17,110 - INFO - Failure Prediction Completed
+2026-06-16 11:21:02,874 - INFO - ETL Process Started
+2026-06-16 11:21:06,939 - INFO - Dataset loaded. Records: 284807, Columns: 31
+2026-06-16 11:21:09,215 - INFO - Duplicates removed: 1081
+2026-06-16 11:21:09,361 - INFO - Missing values handled. Rows dropped due to missing Class: 0
+2026-06-16 11:21:09,363 - INFO - Data types normalized
+2026-06-16 11:21:09,369 - INFO - Negative Amount values fixed: 0
+2026-06-16 11:21:09,373 - INFO - Class Distribution — Normal: 283253, Fraud: 473, Fraud Rate: 0.1667%
+2026-06-16 11:21:09,411 - INFO - Data Quality Score: 100.00%
+2026-06-16 11:21:27,915 - INFO - clean_transactions.csv created. Final records: 283726
+2026-06-16 11:21:27,915 - INFO - ETL Process Completed Successfully
+2026-06-16 11:24:04,350 - INFO - Anomaly Detection Process Started
+2026-06-16 11:24:09,133 - INFO - Dataset Loaded. Records: 283726, Columns: 31
+2026-06-16 11:24:09,135 - INFO - Auto-detected 30 feature columns: ['Time', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount']
+2026-06-16 11:24:09,596 - INFO - All features normalized using StandardScaler
+2026-06-16 11:24:09,603 - INFO - Label column 'Class' found. Contamination: 0.001667
+2026-06-16 11:24:09,605 - INFO - Isolation Forest Training Started
+2026-06-16 11:24:16,756 - INFO - Isolation Forest Training Completed
+2026-06-16 11:24:16,775 - INFO - Normal Records: 283253
+2026-06-16 11:24:16,776 - INFO - Anomalies Detected: 473
+2026-06-16 11:24:29,260 - INFO - Detection Rate: 16.28%
+2026-06-16 11:24:29,260 - INFO - Caught 77 out of 473 real fraud cases
+2026-06-16 11:24:49,712 - INFO - anomaly_results.csv created successfully
+2026-06-16 11:24:49,790 - INFO - Anomaly Detection Process Completed Successfully
+2026-06-16 11:24:51,635 - INFO - Self-Healing Process Started
+2026-06-16 11:24:55,034 - INFO - Anomaly Results Loaded. Records: 283726
+2026-06-16 11:24:55,235 - INFO - Normal Records: 283253
+2026-06-16 11:24:55,236 - INFO - Anomalies Found: 473
+2026-06-16 11:24:55,248 - INFO - Median Amount used for healing: 22.00
+2026-06-16 11:24:55,251 - INFO - Amount healed — extreme values replaced with median
+2026-06-16 11:24:55,686 - INFO - V1-V28 healing: 6600 extreme values replaced with column medians
+2026-06-16 11:24:55,698 - INFO - HealingStatus column added
+2026-06-16 11:24:55,706 - INFO - Quarantined confirmed fraud records: 77
+2026-06-16 11:25:14,700 - INFO - Final Records: 283726
+2026-06-16 11:25:14,701 - INFO - Healed: 396, Quarantined: 77
+2026-06-16 11:25:14,701 - INFO - healed_transactions.csv created successfully
+2026-06-16 11:25:14,701 - INFO - Self-Healing Process Completed Successfully
+2026-06-16 11:25:16,260 - INFO - Database Process Started
+2026-06-16 11:25:22,483 - INFO - Healed Dataset Loaded. Records: 283726
+2026-06-16 11:25:22,483 - INFO - Anomaly Results Loaded. Records: 283726
+2026-06-16 11:25:22,502 - INFO - Connected to SQLite Database
+2026-06-16 11:25:42,533 - INFO - transactions table created. Records: 283726
+2026-06-16 11:26:01,737 - INFO - anomaly_results table created. Records: 283726
+2026-06-16 11:26:01,789 - INFO - healing_summary table created
+2026-06-16 11:26:01,942 - INFO - fraud_summary table created
+2026-06-16 11:26:02,320 - INFO - Tables in DB: ['transactions', 'anomaly_results', 'healing_summary', 'fraud_summary']
+2026-06-16 11:26:02,322 - INFO - Database Connection Closed
+2026-06-16 11:26:02,323 - INFO - Database Process Completed Successfully
+2026-06-16 11:26:03,818 - INFO - Failure Prediction Started
+2026-06-16 11:26:09,876 - INFO - Total Records: 283726
+2026-06-16 11:26:09,878 - INFO - Anomalies: 473, Anomaly Rate: 0.1667%
+2026-06-16 11:26:09,878 - INFO - Confirmed Fraud: 77, Fraud Rate: 0.0271%
+2026-06-16 11:26:09,878 - INFO - Healing Rate: 83.72%
+2026-06-16 11:26:09,878 - INFO - Failure Risk: MEDIUM
+2026-06-16 11:26:09,878 - INFO - Risk Score: 96.67
+2026-06-16 11:26:09,882 - INFO - Health Score: 99.83%
+2026-06-16 11:26:09,891 - INFO - Detection Rate: 16.28%
+2026-06-16 11:26:09,891 - INFO - False Positives: 396, FP Rate: 0.1398%
+2026-06-16 11:26:09,914 - INFO - failure_prediction.csv created
+2026-06-16 11:26:09,914 - INFO - Failure Prediction Completed
+2026-08-12 19:23:46,956 - INFO - ETL Process Started
+2026-08-12 19:23:50,117 - INFO - Dataset loaded. Records: 284807, Columns: 31
+2026-08-12 19:23:51,481 - INFO - Duplicates removed: 1081
+2026-08-12 19:23:51,803 - INFO - Missing values handled. Rows dropped due to missing Class: 0
+2026-08-12 19:23:51,811 - INFO - Data types normalized
+2026-08-12 19:23:51,816 - INFO - Negative Amount values fixed: 0
+2026-08-12 19:23:51,821 - INFO - Class Distribution — Normal: 283253, Fraud: 473, Fraud Rate: 0.1667%
+2026-08-12 19:23:51,848 - INFO - Data Quality Score: 100.00%
+2026-08-12 19:24:12,838 - INFO - clean_transactions.csv created. Final records: 283726
+2026-08-12 19:24:12,838 - INFO - ETL Process Completed Successfully
+2026-08-12 19:25:04,227 - INFO - Anomaly Detection Process Started
+2026-08-12 19:25:09,443 - INFO - Dataset Loaded. Records: 283726, Columns: 31
+2026-08-12 19:25:09,482 - INFO - Auto-detected 30 feature columns: ['Time', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount']
+2026-08-12 19:25:09,837 - INFO - All features normalized using StandardScaler
+2026-08-12 19:25:09,845 - INFO - Label column 'Class' found. Contamination: 0.001667
+2026-08-12 19:25:09,855 - INFO - Isolation Forest Training Started
+2026-08-12 19:25:17,106 - INFO - Isolation Forest Training Completed
+2026-08-12 19:25:17,128 - INFO - Normal Records: 283253
+2026-08-12 19:25:17,129 - INFO - Anomalies Detected: 473
+2026-08-12 19:25:24,227 - INFO - Detection Rate: 16.28%
+2026-08-12 19:25:24,227 - INFO - Caught 77 out of 473 real fraud cases
+2026-08-12 19:25:43,939 - INFO - anomaly_results.csv created successfully
+2026-08-12 19:25:44,016 - INFO - Anomaly Detection Process Completed Successfully
+2026-08-12 19:25:45,731 - INFO - Self-Healing Process Started
+2026-08-12 19:25:48,791 - INFO - Anomaly Results Loaded. Records: 283726
+2026-08-12 19:25:48,914 - INFO - Normal Records: 283253
+2026-08-12 19:25:48,914 - INFO - Anomalies Found: 473
+2026-08-12 19:25:48,917 - INFO - Median Amount used for healing: 22.00
+2026-08-12 19:25:48,927 - INFO - Amount healed — extreme values replaced with median
+2026-08-12 19:25:49,338 - INFO - V1-V28 healing: 6600 extreme values replaced with column medians
+2026-08-12 19:25:49,340 - INFO - HealingStatus column added
+2026-08-12 19:25:49,347 - INFO - Quarantined confirmed fraud records: 77
+2026-08-12 19:26:08,275 - INFO - Final Records: 283726
+2026-08-12 19:26:08,275 - INFO - Healed: 396, Quarantined: 77
+2026-08-12 19:26:08,275 - INFO - healed_transactions.csv created successfully
+2026-08-12 19:26:08,276 - INFO - Self-Healing Process Completed Successfully
+2026-08-12 19:26:10,026 - INFO - Database Process Started
+2026-08-12 19:26:16,573 - INFO - Healed Dataset Loaded. Records: 283726
+2026-08-12 19:26:16,573 - INFO - Anomaly Results Loaded. Records: 283726
+2026-08-12 19:26:16,589 - INFO - Connected to SQLite Database
+2026-08-12 19:26:34,479 - INFO - transactions table created. Records: 283726
+2026-08-12 19:26:51,491 - INFO - anomaly_results table created. Records: 283726
+2026-08-12 19:26:51,552 - INFO - healing_summary table created
+2026-08-12 19:26:51,740 - INFO - fraud_summary table created
+2026-08-12 19:26:52,118 - INFO - Tables in DB: ['transactions', 'anomaly_results', 'healing_summary', 'fraud_summary']
+2026-08-12 19:26:52,118 - INFO - Database Connection Closed
+2026-08-12 19:26:52,118 - INFO - Database Process Completed Successfully
+2026-08-12 19:26:53,601 - INFO - Failure Prediction Started
+2026-08-12 19:27:00,395 - INFO - Total Records: 283726
+2026-08-12 19:27:00,395 - INFO - Anomalies: 473, Anomaly Rate: 0.1667%
+2026-08-12 19:27:00,396 - INFO - Confirmed Fraud: 77, Fraud Rate: 0.0271%
+2026-08-12 19:27:00,396 - INFO - Healing Rate: 83.72%
+2026-08-12 19:27:00,396 - INFO - Failure Risk: MEDIUM
+2026-08-12 19:27:00,397 - INFO - Risk Score: 96.67
+2026-08-12 19:27:00,397 - INFO - Health Score: 99.83%
+2026-08-12 19:27:00,399 - INFO - Detection Rate: 16.28%
+2026-08-12 19:27:00,399 - INFO - False Positives: 396, FP Rate: 0.1398%
+2026-08-12 19:27:00,416 - INFO - failure_prediction.csv created
+2026-08-12 19:27:00,417 - INFO - Failure Prediction Completed
+2026-08-13 10:14:47,410 - INFO - ETL Process Started
+2026-08-13 10:14:50,852 - INFO - Dataset loaded. Records: 284807, Columns: 31
+2026-08-13 10:14:52,805 - INFO - Duplicates removed: 1081
+2026-08-13 10:14:53,208 - INFO - Missing values handled. Rows dropped due to missing Class: 0
+2026-08-13 10:14:53,220 - INFO - Data types normalized
+2026-08-13 10:14:53,228 - INFO - Negative Amount values fixed: 0
+2026-08-13 10:14:53,233 - INFO - Class Distribution — Normal: 283253, Fraud: 473, Fraud Rate: 0.1667%
+2026-08-13 10:14:53,277 - INFO - Data Quality Score: 100.00%
+2026-08-13 10:15:12,097 - INFO - clean_transactions.csv created. Final records: 283726
+2026-08-13 10:15:12,098 - INFO - ETL Process Completed Successfully
+2026-08-13 10:16:05,009 - INFO - Anomaly Detection Process Started
+2026-08-13 10:16:07,958 - INFO - Dataset Loaded. Records: 283726, Columns: 31
+2026-08-13 10:16:08,001 - INFO - Auto-detected 30 feature columns: ['Time', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount']
+2026-08-13 10:16:08,281 - INFO - All features normalized using StandardScaler
+2026-08-13 10:16:08,285 - INFO - Label column 'Class' found. Contamination: 0.001667
+2026-08-13 10:16:08,288 - INFO - Isolation Forest Training Started
+2026-08-13 10:16:14,344 - INFO - Isolation Forest Training Completed
+2026-08-13 10:16:14,371 - INFO - Normal Records: 283253
+2026-08-13 10:16:14,371 - INFO - Anomalies Detected: 473
+2026-08-13 10:16:21,387 - INFO - Detection Rate: 16.28%
+2026-08-13 10:16:21,388 - INFO - Caught 77 out of 473 real fraud cases
+2026-08-13 10:16:39,665 - INFO - anomaly_results.csv created successfully
+2026-08-13 10:16:39,741 - INFO - Anomaly Detection Process Completed Successfully
+2026-08-13 10:16:41,460 - INFO - Self-Healing Process Started
+2026-08-13 10:16:44,400 - INFO - Anomaly Results Loaded. Records: 283726
+2026-08-13 10:16:44,519 - INFO - Normal Records: 283253
+2026-08-13 10:16:44,520 - INFO - Anomalies Found: 473
+2026-08-13 10:16:44,530 - INFO - Median Amount used for healing: 22.00
+2026-08-13 10:16:44,532 - INFO - Amount healed — extreme values replaced with median
+2026-08-13 10:16:45,000 - INFO - V1-V28 healing: 6600 extreme values replaced with column medians
+2026-08-13 10:16:45,003 - INFO - HealingStatus column added
+2026-08-13 10:16:45,007 - INFO - Quarantined confirmed fraud records: 77
+2026-08-13 10:17:02,647 - INFO - Final Records: 283726
+2026-08-13 10:17:02,647 - INFO - Healed: 396, Quarantined: 77
+2026-08-13 10:17:02,647 - INFO - healed_transactions.csv created successfully
+2026-08-13 10:17:02,648 - INFO - Self-Healing Process Completed Successfully
+2026-08-13 10:17:04,245 - INFO - Database Process Started
+2026-08-13 10:17:10,606 - INFO - Healed Dataset Loaded. Records: 283726
+2026-08-13 10:17:10,606 - INFO - Anomaly Results Loaded. Records: 283726
+2026-08-13 10:17:10,627 - INFO - Connected to SQLite Database
+2026-08-13 10:17:33,258 - INFO - transactions table created. Records: 283726
+2026-08-13 10:17:55,960 - INFO - anomaly_results table created. Records: 283726
+2026-08-13 10:17:56,030 - INFO - healing_summary table created
+2026-08-13 10:17:56,233 - INFO - fraud_summary table created
+2026-08-13 10:17:56,701 - INFO - Tables in DB: ['transactions', 'anomaly_results', 'healing_summary', 'fraud_summary']
+2026-08-13 10:17:56,703 - INFO - Database Connection Closed
+2026-08-13 10:17:56,703 - INFO - Database Process Completed Successfully
+2026-08-13 10:17:58,304 - INFO - Failure Prediction Started
+2026-08-13 10:18:04,118 - INFO - Total Records: 283726
+2026-08-13 10:18:04,118 - INFO - Anomalies: 473, Anomaly Rate: 0.1667%
+2026-08-13 10:18:04,119 - INFO - Confirmed Fraud: 77, Fraud Rate: 0.0271%
+2026-08-13 10:18:04,120 - INFO - Healing Rate: 83.72%
+2026-08-13 10:18:04,121 - INFO - Failure Risk: MEDIUM
+2026-08-13 10:18:04,121 - INFO - Risk Score: 96.67
+2026-08-13 10:18:04,123 - INFO - Health Score: 99.83%
+2026-08-13 10:18:04,126 - INFO - Detection Rate: 16.28%
+2026-08-13 10:18:04,126 - INFO - False Positives: 396, FP Rate: 0.1398%
+2026-08-13 10:18:04,137 - INFO - failure_prediction.csv created
+2026-08-13 10:18:04,138 - INFO - Failure Prediction Completed
+2026-08-14 10:36:23,593 - INFO - ETL Process Started
+2026-08-14 10:36:27,436 - INFO - Dataset loaded. Records: 284807, Columns: 31
+2026-08-14 10:36:29,538 - INFO - Duplicates removed: 1081
+2026-08-14 10:36:29,934 - INFO - Missing values handled. Rows dropped due to missing Class: 0
+2026-08-14 10:36:29,942 - INFO - Data types normalized
+2026-08-14 10:36:29,950 - INFO - Negative Amount values fixed: 0
+2026-08-14 10:36:29,957 - INFO - Class Distribution — Normal: 283253, Fraud: 473, Fraud Rate: 0.1667%
+2026-08-14 10:36:29,994 - INFO - Data Quality Score: 100.00%
+2026-08-14 10:36:49,904 - INFO - clean_transactions.csv created. Final records: 283726
+2026-08-14 10:36:49,904 - INFO - ETL Process Completed Successfully
+2026-08-14 10:37:16,606 - INFO - Anomaly Detection Process Started
+2026-08-14 10:37:20,543 - INFO - Dataset Loaded. Records: 283726, Columns: 31
+2026-08-14 10:37:20,589 - INFO - Auto-detected 30 feature columns: ['Time', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount']
+2026-08-14 10:37:20,986 - INFO - All features normalized using StandardScaler
+2026-08-14 10:37:20,991 - INFO - Label column 'Class' found. Contamination: 0.001667
+2026-08-14 10:37:20,993 - INFO - Isolation Forest Training Started
+2026-08-14 10:37:28,635 - INFO - Isolation Forest Training Completed
+2026-08-14 10:37:28,661 - INFO - Normal Records: 283253
+2026-08-14 10:37:28,661 - INFO - Anomalies Detected: 473
+2026-08-14 10:37:36,468 - INFO - Detection Rate: 16.28%
+2026-08-14 10:37:36,468 - INFO - Caught 77 out of 473 real fraud cases
+2026-08-14 10:37:57,521 - INFO - anomaly_results.csv created successfully
+2026-08-14 10:37:57,607 - INFO - Anomaly Detection Process Completed Successfully
+2026-08-14 10:37:59,633 - INFO - Self-Healing Process Started
+2026-08-14 10:38:03,181 - INFO - Anomaly Results Loaded. Records: 283726
+2026-08-14 10:38:03,321 - INFO - Normal Records: 283253
+2026-08-14 10:38:03,322 - INFO - Anomalies Found: 473
+2026-08-14 10:38:03,333 - INFO - Median Amount used for healing: 22.00
+2026-08-14 10:38:03,335 - INFO - Amount healed — extreme values replaced with median
+2026-08-14 10:38:03,791 - INFO - V1-V28 healing: 6600 extreme values replaced with column medians
+2026-08-14 10:38:03,794 - INFO - HealingStatus column added
+2026-08-14 10:38:03,799 - INFO - Quarantined confirmed fraud records: 77
+2026-08-14 10:38:23,861 - INFO - Final Records: 283726
+2026-08-14 10:38:23,861 - INFO - Healed: 396, Quarantined: 77
+2026-08-14 10:38:23,861 - INFO - healed_transactions.csv created successfully
+2026-08-14 10:38:23,862 - INFO - Self-Healing Process Completed Successfully
+2026-08-14 10:38:25,912 - INFO - Database Process Started
+2026-08-14 10:38:31,729 - INFO - Healed Dataset Loaded. Records: 283726
+2026-08-14 10:38:31,729 - INFO - Anomaly Results Loaded. Records: 283726
+2026-08-14 10:38:31,740 - INFO - Connected to SQLite Database
+2026-08-14 10:38:53,019 - INFO - transactions table created. Records: 283726
+2026-08-14 10:39:13,493 - INFO - anomaly_results table created. Records: 283726
+2026-08-14 10:39:13,561 - INFO - healing_summary table created
+2026-08-14 10:39:13,759 - INFO - fraud_summary table created
+2026-08-14 10:39:14,172 - INFO - Tables in DB: ['transactions', 'anomaly_results', 'healing_summary', 'fraud_summary']
+2026-08-14 10:39:14,175 - INFO - Database Connection Closed
+2026-08-14 10:39:14,175 - INFO - Database Process Completed Successfully
+2026-08-14 10:39:16,047 - INFO - Failure Prediction Started
+2026-08-14 10:39:22,079 - INFO - Total Records: 283726
+2026-08-14 10:39:22,079 - INFO - Anomalies: 473, Anomaly Rate: 0.1667%
+2026-08-14 10:39:22,081 - INFO - Confirmed Fraud: 77, Fraud Rate: 0.0271%
+2026-08-14 10:39:22,081 - INFO - Healing Rate: 83.72%
+2026-08-14 10:39:22,081 - INFO - Failure Risk: MEDIUM
+2026-08-14 10:39:22,083 - INFO - Risk Score: 96.67
+2026-08-14 10:39:22,083 - INFO - Health Score: 99.83%
+2026-08-14 10:39:22,088 - INFO - Detection Rate: 16.28%
+2026-08-14 10:39:22,089 - INFO - False Positives: 396, FP Rate: 0.1398%
+2026-08-14 10:39:22,100 - INFO - failure_prediction.csv created
+2026-08-14 10:39:22,102 - INFO - Failure Prediction Completed
